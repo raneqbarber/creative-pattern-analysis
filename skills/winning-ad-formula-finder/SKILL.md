@@ -36,7 +36,7 @@ The hard part is not finding combinations. It is being honest about what a combi
   vocabulary. Coin a real name first — see Step 5.
 - **Report the ad count on every formula.** A recipe resting on five ads is a hypothesis wearing a
   name.
-- **Never claim a formula generalises beyond the segments it was observed in.**
+- **Never claim a formula generalizes beyond the segments it was observed in.**
 
 ---
 

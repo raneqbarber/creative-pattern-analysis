@@ -147,7 +147,7 @@ global guarantee and must not be described as one.
 
 Benjamini-Hochberg controls chance selection. It does not fix the fact that ads are **not
 independent observations**: ads inside a campaign share targeting, budget, bid strategy,
-optimisation state and timing. A rank test that assumes independence will be too optimistic.
+optimization state and timing. A rank test that assumes independence will be too optimistic.
 
 Run a **campaign-level permutation test** on every surviving pattern:
 
@@ -170,10 +170,10 @@ Tag each finding:
 | `too few clusters` | Under 5 distinct campaigns. Cannot assess. Report, do not claim |
 
 This is conservative by design. It asks whether the pattern would still look unusual if the
-effective independent units were campaigns rather than ads. The generalisation gate in Step 4 is a
+effective independent units were campaigns rather than ads. The generalization gate in Step 4 is a
 heuristic guard against the same problem; this replaces the heuristic with a measurement.
 
-### Step 4 — Apply the generalisation gate
+### Step 4 — Apply the generalization gate
 
 Statistical survival is not enough. A pattern that is real inside one forgiving campaign is not
 guidance.
@@ -203,7 +203,7 @@ But naive pooling invites Simpson's paradox — a trait can look good purely by 
 a forgiving segment. So pooled analysis requires both:
 
 1. **The stratified test above**, so segment ease earns nothing.
-2. **The generalisation gate**, so a pattern must appear broadly before it can be pooled at all.
+2. **The generalization gate**, so a pattern must appear broadly before it can be pooled at all.
 
 With both applied, pooled findings rest on 22–193 ads instead of five, which is the difference
 between a portfolio rule and an anecdote.
@@ -229,7 +229,7 @@ more months land — it is not a flaw to hide.
 
 ### Step 7 — Return the verdict list
 
-Brief only what passes all three: **significant AND generalises AND actionable.** State how many of
+Brief only what passes all three: **significant AND generalizes AND actionable.** State how many of
 the original candidates that is. On a real run it was 16 of 201 survivors.
 
 ---
@@ -286,7 +286,7 @@ effective cutoff: singles p ≤ 0.023 · pairs p ≤ 0.008 · trios p ≤ 0.002
 noise calibration: 6.2% of 400 random splits under p<0.05 — as expected
 cluster test: campaign-level permutation, 2,000 shuffles
 
-BRIEF THESE — significant · generalises · actionable · campaign-robust
+BRIEF THESE — significant · generalizes · actionable · campaign-robust
   pattern                   ads segs camps   lift      p      q    robustness
   soft caption CTA           62    5     9   +28%  0.0014  0.041   campaign-robust
   customer testimonial       42    4     7   +14%  0.0000  0.003   campaign-robust
@@ -318,7 +318,7 @@ CUT — 185 patterns, could not be told apart from chance
 | Ad counts missing | Halt. Name the patterns missing them. |
 | Counts are impressions | Halt. Explain the unit-of-analysis problem and ask for per-ad values. |
 | `patterns_tested_total` unknown | Proceed uncorrected, mark every verdict `correction: uncorrected`, and lead the output with the warning. |
-| Only group means supplied | Halt for rank tests. Offer a descriptive summary with no verdicts, clearly labelled as not validated. |
+| Only group means supplied | Halt for rank tests. Offer a descriptive summary with no verdicts, clearly labeled as not validated. |
 | A family has fewer than 5 patterns | Skip correction for that family, say so, and report raw p-values. |
 | Every pattern is cut | Report that plainly. An empty brief list is a real and useful result — it means the dataset is too small to support guidance yet. |
 
@@ -350,7 +350,7 @@ The lesson to carry: it is the size of the gap against the noise that matters, n
 4. Was the campaign-level permutation run, with a robustness tag on every surviving finding?
 5. Is `patterns_tested_total` stated in the output?
 6. Does every surviving pattern carry a confidence tier with its ad count and spend share?
-7. Were the generalisation and actionability gates applied, with failures reclassified rather than silently dropped?
+7. Were the generalization and actionability gates applied, with failures reclassified rather than silently dropped?
 8. Does the output say what surviving means — hard to explain as chance, not proven, not causal?
 9. If the noise calibration was run, is the number published?
 10. Does every published finding carry its evidence tier?

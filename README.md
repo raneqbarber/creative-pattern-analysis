@@ -36,7 +36,7 @@ Missing a required input, they ask instead of guessing.
 | Skill | Does |
 |---|---|
 | [`creative-pattern-miner`](./skills/creative-pattern-miner) | Searches every trait, pair and trio. Emits candidates and the search size behind them |
-| [`creative-pattern-validator`](./skills/creative-pattern-validator) | Decides which survive — chance, clustering, generalisation, actionability |
+| [`creative-pattern-validator`](./skills/creative-pattern-validator) | Decides which survive — chance, clustering, generalization, actionability |
 | [`winning-ad-formula-finder`](./skills/winning-ad-formula-finder) | Turns surviving combinations into named formulas with a brief |
 
 They chain, but each one runs on its own.
@@ -47,7 +47,7 @@ They chain, but each one runs on its own.
 
 1. The miner drops ads below the volume floor, enumerates the search space, and reports how many patterns it tested
 2. The validator tests per ad rather than per impression, corrects for the search size, and shuffles labels at campaign level to check a finding isn't really one campaign
-3. It applies the generalisation gate and marks anything on more than 85% of your portfolio as describing you rather than advising you
+3. It applies the generalization gate and marks anything on more than 85% of your portfolio as describing you rather than advising you
 4. The formula finder names what survives and types it by the team that briefs it
 
 ---

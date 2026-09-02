@@ -103,7 +103,7 @@ IQP = 100 × (1 − Curiosity Risk)
 | IQP | Reading |
 |---|---|
 | ≥ 70 | Likely high-intent clicks |
-| 40–69 | Mixed — monitor landing behaviour |
+| 40–69 | Mixed — monitor landing behavior |
 | < 40 | Clickbait risk. Do not scale until message-landing match improves |
 
 The clickbait signature is high CAS + high CCE + unstable performance: clicks from people
@@ -217,7 +217,7 @@ enough history should replace them with its own observed point of stability. Tre
 starting position for an account with no history of its own.
 
 **CFR does not fire below these thresholds.** An underperformer below threshold is *Emerging*, not
-fatigued. Emerging underperformance may resolve as delivery optimises; fatigued underperformance
+fatigued. Emerging underperformance may resolve as delivery optimizes; fatigued underperformance
 will not. Never increase spend on a High-CFR asset regardless of current CAS.
 
 ### CCR · Creative Concentration Risk
@@ -229,7 +229,7 @@ CCR_spend = Top N pattern spend ÷ Total portfolio spend
 
 | CCR | Tier | Mandate |
 |---|---|---|
-| ≤ 40% | Low | Optimise freely |
+| ≤ 40% | Low | Optimize freely |
 | 40–60% | Moderate | One exploratory pattern test per week |
 | ≥ 60% | High | Structurally fragile. 20% of output and testing capacity to new patterns |
 
@@ -241,7 +241,7 @@ Two independent reads, five states — this is what routes the intervention to t
 |---|---|
 | Creative strong + media strong | Healthy |
 | Creative weak + media strong | Creative revision needed |
-| Creative strong + media weak | Media optimisation needed — do not brief new creative |
+| Creative strong + media weak | Media optimization needed — do not brief new creative |
 | Creative weak + media weak | Likely offer, funnel or strategy — neither creative nor media |
 | **Signal unclear** | Portfolio < 30 days, most SSS < 60, most PCS < 50, or spend too low |
 
@@ -310,8 +310,8 @@ isolation.
 | **Hook rate** (2–3s view) | Whether a video's opening earns attention | Low hook rate with healthy CAS suggests the ad earns clicks *despite* a weak opening — a strong visual hook is worth testing |
 | **Video completion** | Whether the message holds | Low VCR with high CAS: the hook works, the message loses people before the ask |
 | **Thumb stop rate** | Visual salience, especially for statics | Feeds visual-hierarchy analysis in `creative-autopsy-runner` |
-| **Engagement rate** | Social resonance | High engagement with positive CAS suggests audience fit beyond click behaviour |
-| **Bounce rate** | Post-click diagnosis | The corroborating signal for IQP. High bounce + low IQP confirms clickbait behaviour; high bounce + high IQP points at the landing page instead |
+| **Engagement rate** | Social resonance | High engagement with positive CAS suggests audience fit beyond click behavior |
+| **Bounce rate** | Post-click diagnosis | The corroborating signal for IQP. High bounce + low IQP confirms clickbait behavior; high bounce + high IQP points at the landing page instead |
 
 ---
 
@@ -322,7 +322,7 @@ discipline already solved — which is also why the thresholds behave sensibly.
 
 | Metric | Borrowed from | The borrowed idea |
 |---|---|---|
-| CAS, CVLS, CPALS, ROASL | **Medicine** — lab reference ranges | A raw value is meaningless until normalised against a reference range for that context. A cholesterol number alone tells a doctor nothing |
+| CAS, CVLS, CPALS, ROASL | **Medicine** — lab reference ranges | A raw value is meaningless until normalized against a reference range for that context. A cholesterol number alone tells a doctor nothing |
 | CDV | **PR** — advertising value equivalency | Valuing what you generated at what it would have cost to buy |
 | CSR | **Finance** — return on investment | Value back per dollar in |
 | CCE, CFC | **Accounting** — variance analysis | Expected cost vs actual, as a percentage and in absolute dollars |

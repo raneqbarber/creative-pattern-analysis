@@ -4,7 +4,7 @@ Segmentation in this system runs on **platform Ã— ad objective**, not platform Ã
 
 **Why objective.** Every ad platform reports it natively in every export, so no manual tagging step
 is required and nothing depends on whether a team maintains a funnel taxonomy. More importantly it
-is *causally* closer to the thing that makes segmentation necessary: the platform optimises
+is *causally* closer to the thing that makes segmentation necessary: the platform optimizes
 delivery differently per objective, so the CTR and CPC distributions genuinely differ. Funnel stage
 is a strategic label applied to a campaign. Objective is the instruction the algorithm actually
 followed.
